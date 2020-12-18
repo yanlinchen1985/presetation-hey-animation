@@ -1,0 +1,37 @@
+.typing {
+  width: 17em; height: 1.4em;
+  border-right: 2px solid transparent;
+  animation: typing 3.5s steps(37, end), blink-caret .75s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+  font-family: 'Courgette', cursive;
+}
+
+/* typing */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 18.5em; }
+}
+
+/* flashing */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
+
+
+p{
+  font-size: 2em;
+  color: rgb(22, 158, 117);
+  text-shadow: rgb(239, 255, 237) 0.1em 0 0;
+}
+
+body {
+  background:
+    linear-gradient(-20deg, transparent, rgb(221, 248, 253)),
+    url("../images/home.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

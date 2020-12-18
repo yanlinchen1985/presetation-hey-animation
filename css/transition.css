@@ -1,0 +1,22 @@
+/*change color and size */
+.transition {
+  width: 80px;
+  background-color: rgb(233, 159, 0);
+  transition: transform 4s, background-color 4s;
+}
+
+.transition:hover {
+  transform: scale(7) rotate(360deg);
+  background-color: rgb(110, 0, 114);
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  left : 50%;
+  top: 50%;
+}

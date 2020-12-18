@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body style */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+main {
+  padding: 0;
+  background: #000000;
+  color: rgb(0, 0, 0);
+  flex-direction: column;
+  text-align: center;
+  min-height: 94vh;
+}
+
+
+button {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(136, 0, 0);
+  text-align: center;
+  margin-top: -3rem;
+  border-radius: 5rem;
+  font-family: 'Courgette', cursive;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+h1 {
+  font-size: 30px;
+  font-family: 'Courgette', cursive;
+}
+
+/* nav */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(0, 151, 131);
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* right links*/
+.navbar a.right {
+  float: right;
+}
+
+/* hover */
+.navbar a:hover {
+  background-color:  rgb(231, 255, 247);
+  color: black;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background:  rgb(4, 161, 140);
+  color:  rgb(231, 255, 247);
+}
+main {
+  flex: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@300&display=swap');
+
+/* make the left eyeball blue */
+.yellow {
+  fill: rgb(241, 197, 0);
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+      flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

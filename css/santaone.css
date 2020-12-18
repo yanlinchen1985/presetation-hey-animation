@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  left : 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h2 {
+  color: rgb(0, 151, 131);
+  font-family: 'Courgette', cursive;
+}
+
+/* gallery style*/
+.santagallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.santa {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-self: flex-start;
+
+  margin: 0;
+  padding: 0.5rem; 
+  width: 165px;
+}
+
+.santapic{
+  width: 100%;
+  border: cadetblue 1px solid;
+}
+

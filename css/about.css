@@ -1,0 +1,79 @@
+h3 {
+  color:  rgb(255, 255, 255) ;
+  text-shadow: rgb(24, 43, 34) 0.1em 0.1em 0;
+  font-family: 'Courgette', cursive;
+}
+
+h2 {
+  color:  rgb(2, 122, 106) ;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+  font-size: 1rem;
+  color:  rgb(2, 122, 106);
+  font-family: 'Courgette', cursive;
+  
+}
+
+body {
+  background:
+    linear-gradient(-20deg, transparent, rgb(221, 248, 253)),
+    url("../images/aboutbackground.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info {
+  padding-top: 10vh;
+}
+
+.side {
+  max-width: 18rem; 
+  height: 92vh;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color:  rgb(166, 228, 220);
+
+}
+
+/* icons style  */
+.icons ul, .icons li, .icons a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  
+  color: white;
+	text-decoration: none;
+
+	padding: 0.5em;
+}
+
+/* social media icon hover */
+.icons a:hover {
+  color: rgb(0, 151, 131);
+}
+
+.icons .fab {
+	font-size: 1.5em;
+} 
+
+/*Media Queries- larger font size on mobile*/
+@media (orientation: portrait) {
+
+  h2 { 
+    font-size: 9px; 
+  }
+  p {
+    font-size: 5px;
+  }
+
+  .icons .fab {
+    font-size: 4px;
+  }
+}
+

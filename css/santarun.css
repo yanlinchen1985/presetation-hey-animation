@@ -1,0 +1,64 @@
+/* Make Santa run by 7 different images*/
+.santarun {
+  width: 165px;
+  height: 210px;
+  animation:santarun 950ms; /* name active time*/
+  animation-iteration-count:infinite; /* keep running-the number of times it runs */
+  animation-timing-function: step-start; /* once finished then restart */
+  animation-direction: alternate; /* keep running */
+}
+  
+@keyframes santarun{
+  0% {background-image: url(../images/santa1.jpg);}
+  14.3% {background-image: url(../images/santa2.jpg);}
+  28.6% {background-image: url(../images/santa3.jpg);}
+  42.9% {background-image: url(../images/santa4.jpg);}
+  57.2% {background-image: url(../images/santa5.jpg);}
+  71.5% {background-image: url(../images/santa6.jpg);}
+  85.8% {background-image: url(../images/santa7.jpg);}
+  100% {background-image: url(../images/santa1.jpg);}
+}
+
+
+
+/* Make Santa run by one images*/
+.santa {
+  width: 180px;
+  height: 181px;
+  background: url(../images/santa.jpg) 0 0 no-repeat;
+  animation-name: santa; /* name */
+  animation-iteration-count: infinite; /* keep running-the number of times it runs */
+  animation-timing-function: step-start; /* once finished then restart */
+  animation-duration: 950ms; /* how long time it takes to complete */
+}
+
+
+@keyframes santa{
+  0% {background-position: 0 0;}
+  14.3% {background-position: -180px 0;}
+  28.6% {background-position: -360px 0;}
+  42.9% {background-position: -540px 0;}
+  57.2% {background-position: -720px 0;}
+  71.5% {background-position: -900px 0;}
+  85.8% {background-position: -1080px 0;}
+  100% {background-position: 0 0;}
+}
+
+
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  left : 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h2 {
+  color: rgb(0, 151, 131);
+  font-family: 'Courgette', cursive;
+}
