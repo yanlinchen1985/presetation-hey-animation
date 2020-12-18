@@ -7,7 +7,7 @@ by  Lynn Chen     Oct,26,2020
 ## Comments
 
 This is for my final presentation which is about the difference between CSS ANIMATION and TRANSITION.
-I made SANTARUN animation by using pure CSS animation in two ways.
+I made SANTARUN animation by using pure CSS animation in two ways. The santa run css can be found in css< santarun.css
 
 
 
